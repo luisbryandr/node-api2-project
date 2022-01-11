@@ -7,7 +7,7 @@ const server = express();
 
 server.use(express.json());
 
-server.use('api/posts', postRouter);
+server.use('/api/posts', postRouter);
 
 server.use('*', (req, res) => {
     res.send(`
